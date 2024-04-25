@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-compatible" content="IE-edge">
+  <meta name ="viewport"  content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cssStyle_temperatureConvert.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="https://images.glints.com/unsafe/glints-dashboard.s3.amazonaws.com/company-logo/a32f81155cd0d4f16d36aef74f7d2644.png">
+  <script src="TemperatureSwicth.js"></script>
+  <title>Temperature Swicth</title>
+</head>
+<!--bagian atas-->
+<body class="background">   
+    <div>
+    <header>
+      <h1 class="main-title">Temperature Swicth</h1>
+    </header>
+    <!--Isi Konten-->
+    <section class="main-general">
+      <section>
+        <p>Masukkan suhu derajat Celcius (&deg;C) ke kotak dibawah, 
+            lalu klik tombol Konversi untuk mendapatkan hasil konveri dalam bentuk Fahrenheit (&deg;F).</p>
+      </section>
+      <!--Celcius-->
+      <div id="c-to-f">
+        <section class="main-celcius">
+          <header>
+            <h3>celcius</h3>
+          </header>
+          <article>
+            <form id="temperature-form">
+                <input type="text" id="celcius-input">
+                <!-- ... -->
+              </form>
+            <div>
+                <button id="convert-btn">Convert</button>
+                <button id="reset-btn">Reset</button>
+                <button id="reverse-btn">Reverse</button>
+              </div>
+          </article>
+        </section>
+        <!--Fahreheit-->
+        <section class="main-fahrenheit">
+          <header>
+            <h3>Fahrenheit</h3>
+          </header>
+          <article>
+            <form id="temperature-form">
+                <input type="text" id="fahrenheit-output">
+          </article>
+        </div>
+        <div id="f-to-c">
+          <!--Fahreheit-->
+          <section class="main-fahrenheit">
+            <header>
+              <h3>fahrenheit</h3>
+            </header>
+            <article>
+                <form id="temperature-form">
+                    <input type="text" id="fahrenheit-input">
+                </form>
+              <div>
+                <button id="convert-btn">Convert</button>
+                <button id="reset-btn">Reset</button>
+                <button id="reverse-btn">Reverse</button>
+              </div>
+            </article>
+          </section>
+        <!--Fahreheit-->
+        <section class="main-celcius">
+          <header>
+            <h3>Celcius</h3>
+          </header>
+          <article>
+            <form id="temperature-form">
+                <input type="text" id="celcius-output">
+            </form>
+          </article>
+        </div>
+      <section class="main-result">
+        <header>
+          <h3>Cara Kalkulasi</h3>
+        </header>
+        <article>
+            <form id="temperature-form">
+            <output id="result"></output>
+        </form>
+        </article>
+      </section>
+      <section>
+        <p>Fahrenheit ke celcius</p>
+    <h3> Cara konversi dari celcius (&deg;C) ke Fahrenheit (&deg;F) </h3>
+    <p>suhu S dalam derajat Fahrenheit (&deg;F) sama dengan suhu S dalam derajat <br> celcius (&deg;C) kali 9/5 tambah 32</p>
+    <h1 class="rumus">S<sub class="To-f">(&deg;F)</sub>=(S(&deg;C)X9/5)+32</h1>
+    <p>atau</p>
+    <h1 class="rumus">S<sub class="To-f">(&deg;F)</sub>=(S(&deg;C)X1.8)+32</h1>
+    </section>
+    </div>
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-google"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-tiktok"></ion-icon></a></li>
+      </ul>
+      <p>@2024 Temperature Swicth | All Rights Reserved</p>
+    </footer>  
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/revou-fundamental-course/15-apr-24-IhsanulFikri2005.git
+git push -u origin main
